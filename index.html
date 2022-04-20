@@ -1,42 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./src/index.css">
+        <link rel="stylesheet" href="/src/index.css">
         <title>Restaurant Page</title>
     </head>
     <body>
-        <div class="content" id="content">
-            <nav class="nav">
-                <ul>
-                    <li><a href="#index" onclick="toggleDiv('tag1')">Home</a></li>
-                    <li><a href="#menu"  onclick="toggleDiv('tag2')">Menu</a></li>
-                    <li><a href="#contact"  onclick="toggleDiv('tag3')">Contact</a></li>
-                </ul>
-            </nav>
-            <section id="tab1" >
-                <div>
-                    <p>
-                        <span style="font-style:italic">"The closest thing I use to beauty products is the grease on the pizza from John’s Pizzeria."</span> 
-                        - Mark Feuerstein</p>
-                </div>
-            </section>
-            <section class="hide" id="tab2" >
-                <p>Page2</p>
-            </section>
-            <section class="hide" id="tab3" >
-                <p>Page3</p>
-            </section>
-        </div>
+        <div class="container">
 
-        <script>
-            const toggleDiv = (divId) => {
-               document.getElementById('content').innerHTML =''
-            }
-        </script>
+        </div>
+        <script type="module" src="./src/index.js"></script>
     </body>
-    
 </html>
