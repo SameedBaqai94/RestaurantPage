@@ -1,9 +1,9 @@
-import navBar from "./nav.js";
+import navBar from "./nav";
 
-const container = document.querySelector('.container');
+const container = document.querySelector(".container");
 
-window.addEventListener('load', () => {
-    let _navB = navBar();
-    container.innerHTML = "";
-    container.appendChild(_navB.createNav());
-})
+window.addEventListener("load", () => {
+  let _navB = navBar();
+  container.innerHTML = "";
+  container.appendChild(_navB.createNav());
+});
