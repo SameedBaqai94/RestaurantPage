@@ -1,7 +1,7 @@
 const navBar = () => {
 
     const createNav = () => {
-        const links = ['HOME', 'MENU', 'CONTACT'];
+        const links = ['HOME', 'MENU'];
         const ids = links.map(ele => ele.toLowerCase());
 
         const nav = document.createElement('nav');
@@ -9,8 +9,11 @@ const navBar = () => {
 
         for (let i = 0; i < links.length; i++) {
             const li = document.createElement('li');
-            li.setAttribute('id', ids[i]);
-            li.textContent = links[i];
+            const a = document.createElement('a');
+            a.setAttribute('id', ids[i]);
+            a.setAttribute('href', `#${ids[i]}`);
+            a.textContent = links[i];
+            li.appendChild(a);
             ul.appendChild(li);
         }
 
