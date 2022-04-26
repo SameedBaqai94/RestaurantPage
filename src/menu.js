@@ -11,7 +11,7 @@ const menuPage = () => {
             const h3 = document.createElement('h3');
             const p = document.createElement('p');
 
-            img.setAttribute('src', `./src/img/img${i + 2}.jpg`)
+            img.setAttribute('src', `../src/img/img${i + 2}.jpg`)
             childDiv.appendChild(img);
 
             h3.textContent = pizzas[i];
